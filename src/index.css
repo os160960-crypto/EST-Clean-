@@ -21,6 +21,12 @@ html, body {
     padding: 0;
 }
 
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans KR, Apple SD Gothic Neo, "Malgun Gothic", sans-serif;
     color: var(--color-text);
@@ -63,6 +69,10 @@ a {
 /* Layout helpers */
 main, header, footer, .hero, .features {
     width: 100%;
+}
+
+main {
+    flex: 1;
 }
 
 .container {
@@ -282,5 +292,4 @@ footer .container {
         align-items: flex-start;
     }
 }
-
 
